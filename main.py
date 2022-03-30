@@ -1,8 +1,9 @@
 import math
 
-principal = 250000
-rate = 0.0485
-numofyears = 30
-numofmonths = numofyears * 12
-monthlyrate = rate/12
-monthlypayment =
+p = 250000
+r = 4.85
+ny = 30
+nm = ny * 12
+mr = r/(12*100)
+monthlypayment = p * mr * ((1+mr)**ny)/((1+mr)**ny - 1)
+print(monthlypayment)
